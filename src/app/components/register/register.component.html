@@ -1,0 +1,115 @@
+<!-- <body>
+    <div class="d-lg-flex half">
+    <div class="img bg order-1 order-md-2" ></div>
+    <div class="contents order-2 order-md-1" >
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7">
+            <h3>Registrar Cuenta</h3>
+            
+            <form #frmLogin="ngForm" class="login-container" (ngSubmit)="onRegister(frmLogin)">
+              <div class="form-group ">
+                <label>Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre del usuario" name="name"  ngModel required >
+              </div>
+              <div class="form-group ">
+                <label>Código</label>
+                <input type="text" class="form-control" placeholder="Código" name="code"  ngModel required >
+              </div>
+              <div class="form-group ">
+                <label>Correo</label>
+                <input type="email" class="form-control" placeholder="your-email@gmail.com" name="email"  ngModel required >
+              </div>
+              <div class="form-group ">
+                <label>Programa </label>
+                <input type="text" class="form-control" placeholder="Programa o Dependencia a la que pertenece" name="program"  ngModel required >
+              </div>
+              <div class="form-group ">
+                <label>Semestre</label>
+                <input type="text" class="form-control" placeholder="Semestre: Si no es estudiante, ingrese semestre=0" name="semester"  ngModel required >
+              </div>
+              <div class="form-group">
+                <label>Contraseña</label>
+                <input type="password" class="form-control" placeholder="Your Password" name="password" placeholder="Contraseña" ngModel required >
+              </div>
+              
+              <div class="form-group">
+                <input input type="submit" value="Registrar" class="btn btn-block btn-success">
+                <div class="d-flex  align-items-center mt-3">
+                  <span class="ml-auto"><a routerLink="/login">Volver</a></span> 
+               </div>
+              </div>
+             
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+    
+    
+
+  </body>
+ -->
+ <!DOCTYPE html>
+ <html >
+ <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+</head>
+
+
+    <body class=" vh-100 row justify-content-center ">
+        <div class="container" id="registration-form">
+            <div class="image"></div>
+            <div class="frm">
+                <h3>Registrar Cuenta</h3>
+             <form #frmLogin="ngForm"  (ngSubmit)="onRegister(frmLogin)">
+              <div class="form-group ">
+                <label>Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre" name="nombre"  ngModel required >
+              </div>
+              <div class="form-group ">
+                <label>Apellido</label>
+                <input type="text" class="form-control" placeholder="Apellido" name="apellido"  ngModel required >
+              </div>
+              <div class="form-group">
+                <label class="mr-sm-2 mt-3" for="inlineFormCustomSelect">Género</label>
+                <select class="form-select form-select-lg mb-3" name="genero" ngModel required>
+                  <optgroup label="Elige una...">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="form-group ">
+                <label>Correo Electrónico </label>
+                <input type="email" class="form-control" placeholder="correo@correo.com" name="correo"  ngModel required >
+              </div>
+              <div class="form-group ">
+                <label>Nombre de Usuario</label>
+                <input type="text" class="form-control" placeholder="Nombre de usuario" name="nombreUsuario"  ngModel required >
+              </div>
+              <div class="form-group">
+                <label>Contraseña</label>
+                <input type="password" class="form-control" placeholder="Your Password" name="password" placeholder="Contraseña" ngModel required >
+              </div>
+              
+              <div class="form-group">
+                <input input type="submit" value="Registrar" class="btn btn-block btn-success">
+              
+              </div>
+             
+             
+            </form>
+            </div>
+        </div>
+    </body>
+</html>

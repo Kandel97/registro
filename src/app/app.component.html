@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand"  > REGISTRO </a>
+          
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0 ">
+          <ng-container *ngIf="!validate(); else salir">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" routerLink="/login">Iniciar sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/register">Regístrate</a>
+            </li>
+          </ng-container >
+          <ng-template #salir>
+            
+            <li class="nav-item">
+              <a class="nav-link" style="cursor: pointer;" (click)="sale()">Salir</a>
+            </li>
+     
+          </ng-template>
+                             
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <h1>Hola</h1>
+    <h2> {{getNombre()}} </h2>
+</body>
+
+
+  <router-outlet>
+  
+</router-outlet>
